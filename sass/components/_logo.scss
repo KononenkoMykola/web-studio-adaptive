@@ -1,0 +1,14 @@
+.logo {
+    color: var(--logo-text-color);
+    text-decoration: none;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-top: 0;
+    margin-bottom: 0;
+  
+  &__web {
+    color: var(--accent-color);
+  }
+}
