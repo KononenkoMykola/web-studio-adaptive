@@ -1,10 +1,12 @@
+.page-header {
+  color: var(--header-background-color);
+  border-bottom: 1px solid #ececec;
+}
 .menu {
   display: flex;
   padding: 0;
   margin: 0;
-  list-style: none;
-
-  
+  list-style: none; 
   
 }
 @media (max-width: 767px) {
@@ -74,6 +76,10 @@
   list-style: none;
   font-weight: 500;
   letter-spacing: 0.02em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  
   &__social{
     display: flex;
   }
@@ -117,8 +123,10 @@
   color: var(--primary-text-color);
     font-size: 28px;
     line-height: 1.17;
-    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 64px;
+    margin-top: 120px;
     &__item:not(:last-child) {
       margin-bottom: 32px;
     }
@@ -300,7 +308,9 @@
     letter-spacing: 0.02em;
     display: flex;
     margin-left: auto;
-    
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
   
   
   &__item + &__item {

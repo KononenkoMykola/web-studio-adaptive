@@ -20,11 +20,6 @@
   }
   .join {
 
-    // display: inline-block;
-    // vertical-align: top;
-    // position: absolute;
-    // top: 72px;
-    // left: 320px;
   
   &__title {
     font-weight: 700;
@@ -71,9 +66,6 @@
   
   }
   .sign-us {
-    // position: absolute;
-    // top: 72px;
-    // right: 40px;
   
   &__sign {
     font-weight: 700;
@@ -135,6 +127,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    display: inline-flex;
     padding: 0;
   }
   &__icon {
@@ -146,6 +139,40 @@
     justify-content: center;
   }   
     } 
+    @media screen and (min-width:768px) and (max-width:1199px) {
+      &__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 76px;
+        padding-right: 89px;
+      } 
+      .join {
+
+        display: block;
+        margin-left: auto;
+      
+      &__title {
+        margin-top: 0;
+      }
+    }
+      .menu {
+        width: 50%;
+      }
+      .sign-us {
+        width: 100%;
+      
+      &__sign {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+    }
   @media screen and (min-width:1200px) {
     color: var(--secondary-title-text-color);
     background: var(--secondary-background-color);
